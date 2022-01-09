@@ -2,7 +2,7 @@
   "name": "shpee",
   "version": "0.0.1",
   "description": "",
-  "main": "./lib/index.js",
+  "main": "./lib/index.cjs",
   "module": "./lib/index.mjs",
   "types": "./lib/index.d.ts",
   "directories": {
@@ -20,6 +20,7 @@
     "node-fetch": "^3.1.0"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
     "eslint": "^8.6.0",
@@ -35,8 +36,8 @@
   ],
   "exports": {
     ".": {
-      "require": "./index.cjs",
-      "import": "./index.mjs"
+      "require": "./lib/index.cjs",
+      "import": "./lib/index.mjs"
     }
   }
 }
