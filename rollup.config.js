@@ -8,7 +8,7 @@ export default [
       file: './lib/index.mjs',
       format: 'esm',
     },
-    plugins: [typescript(), commonjs()],
+    plugins: [typescript()],
   },
   {
     input: './src/index.ts',
